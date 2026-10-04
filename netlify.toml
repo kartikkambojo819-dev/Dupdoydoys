@@ -1,7 +1,11 @@
 [build]
   functions = "netlify/functions"
 
+[functions]
+  node_bundler = "esbuild"
+
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/app"
+  to = "/.netlify/functions/app/:splat"
   status = 200
+  force = true
