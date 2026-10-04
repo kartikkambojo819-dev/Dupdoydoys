@@ -1,0 +1,5 @@
+flask
+cloudscraper
+beautifulsoup4
+serverless-wsgi
+
